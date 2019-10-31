@@ -1,5 +1,7 @@
 import React from 'react';
-import Select from '../react-select';
+import Select from 'react-select';
+import FixedOptions from './FixedOptions';
+
 
 const options = [
     { value: 'chocolate', label: 'Chocolate' },
@@ -7,7 +9,7 @@ const options = [
     { value: 'vanilla', label: 'Vanilla' }
 ];
 
-class my-select extends React.Component {
+class MySelect extends React.Component {
     state = {
         selectedOption: null,
     }
@@ -19,11 +21,13 @@ class my-select extends React.Component {
         const { selectedOption } = this.state;
 
         return (
-            <Select
+            <div id="select-da"><div id="select"><Select
         value={selectedOption}
         onChange={this.handleChange}
         options={options}
-        />
+        /></div><div id="hello"><FixedOptions /></div></div>
     );
     }
 }
+
+export default MySelect;

@@ -12,3 +12,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.loading--content {
+  all: initial;
+  float: left;
+  clear: left;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-style: normal;
+  font-size: 13px;
+  color: #000;
+}
+.add-on-text{
+  position: absolute !important;
+  left: -9999em !important;
+}
+.loading--spinner {
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top: 3px solid #ffbf47;
+  margin: 0 0 0 15px;
+  padding: 0;
+  float: left;
+  width: 26px;
+  height: 26px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.action--primary,.sfe .button,.sfe .button-start,.sfe .search-button {
+  background-color: #00823b;
+  position: relative;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #003618;
+  box-shadow: 0 2px 0 #003618;
+  font-size: 1.5em;
+  line-height: 1.35;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: #fff;
+  padding: .5em .6em .4em;
+  margin-bottom: .9375rem;
+  width: 100%;
+}
+.float-right{
+  float: right;
+  width: 8%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

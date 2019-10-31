@@ -1,0 +1,12 @@
+{
+    "plugins": ["stylelint-scss"],
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "shorthand-property-no-redundant-values": null,
+        "at-rule-empty-line-before": null,
+        "declaration-empty-line-before": null,
+        "at-rule-no-unknown": null,
+        "no-descending-specificity": null,
+        "no-duplicate-selectors": null
+    }
+}
