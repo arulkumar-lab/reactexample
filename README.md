@@ -42,3 +42,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+##npm i webpack --save-dev
+##npm i webpack-cli --save-dev
+##npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+##npm i html-webpack-plugin html-loader --save-dev
+##npm i webpack-dev-server --save-dev

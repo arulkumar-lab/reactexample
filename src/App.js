@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Input from './components/input/Input'
 import Home from './module/home'
 /*
@@ -10,8 +9,10 @@ import Home from './module/home'
 function App() {
     return (
         <React.Fragment>
+        <div className="App">
             <Input />
             <Home />
+        </div>
         </React.Fragment>
     );
 }
